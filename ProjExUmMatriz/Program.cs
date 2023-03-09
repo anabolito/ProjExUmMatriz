@@ -4,6 +4,8 @@
     {
         double[,] matrix = new double[5, 3];
 
+
+        // matrix.GetLength(0 ou 1)  0 irá ler a qtdd de linhas, e 1 lerá a qtdd de colunas
         for (int line = 0; line < 5 ; line++)
         {
             for (int column = 0; column <2; column++)
@@ -18,29 +20,13 @@
         }
 
         //vários for para imprimir no formato de uma matriz
-        for(int column = 0;column < 3; column++)
+        for( int line = 0; line< 5 ; line++)
         {
-            Console.Write(matrix[0, column] + "  ");
-        }
-        Console.Write("\n");
-        for (int column = 0; column < 3; column++)
-        {
-            Console.Write(matrix[1, column] + "  ");
-        }
-        Console.Write("\n");
-        for (int column = 0; column < 3; column++)
-        {
-            Console.Write(matrix[2, column] + "  ");
-        }
-        Console.Write("\n");
-        for (int column = 0; column < 3; column++)
-        {
-            Console.Write(matrix[3, column] + "  ");
-        }
-        Console.Write("\n");
-        for (int column = 0; column < 3; column++)
-        {
-            Console.Write(matrix[4, column] + "  ");
+               for(int column = 0;column < 3; column++)
+            {
+                Console.Write($"{matrix[line, column]}\t");
+            }
+            Console.WriteLine();
         }
 
 
